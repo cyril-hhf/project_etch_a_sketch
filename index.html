@@ -9,10 +9,9 @@
     <body>
         <h1>Beatiful art piece</h1>
         <h3>Please choose grid size</h3>
-        <form action="">
-            <input type="number" max="10" min="1" required />
-            <button>Submit</button>
-        </form>
+        <label for="numberInput"> Enter 1 to 100</label>
+        <input id="numberInput" type="number" max="100" min="1" required />
+        <button id="submitButton">Submit</button>
         <div id="grid-container"></div>
         <script src="etch.js"></script>
     </body>
