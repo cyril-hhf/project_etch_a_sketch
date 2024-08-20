@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
         gridContainer.style.width = `${inputValue * itemSize}px`;
         gridContainer.style.height = `${inputValue * itemSize}px`;
 
+
+
         for (let i = 1; i <= inputValue * inputValue; i++) {
             const gridItem = document.createElement('div');
             gridItem.className = 'grid-item';

@@ -1,3 +1,10 @@
+body {
+    padding-left: 50px;
+    padding-top: 30px;
+    font-family: serif;
+}
+
+
 .grid-item {
     display: flex;
     justify-content: center;
