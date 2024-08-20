@@ -18,10 +18,19 @@ document.addEventListener('DOMContentLoaded', () => {
             gridItem.style.width = `${itemSize}px`;
             gridItem.style.height = `${itemSize}px`;
             gridItem.addEventListener('mouseenter', () => {
-                gridItem.classList.add('hovered');
+                gridItem.style.backgroundColor = getRandomColor();
             });
             gridContainer.appendChild(gridItem);
         }
     });
 });
+
+function getRandomColor() {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
 
